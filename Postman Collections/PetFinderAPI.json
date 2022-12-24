@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "b88423ed-42b7-40db-8c51-af57f0b0f9a1",
+		"name": "PetFinder API Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Animals List",
+			"_postman_id": "1ebd5952-17f3-4a6b-abcb-3f7d05042c01",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJPYjFuejduZG9yQUVablQ4NEFaNUlENTFBM2h1WGhyQnZrd0k3ejMzQzZhdXhzZ21WMCIsImp0aSI6IjExZjU2YjAwNjQzYzdhNTkwYTU2YTQ4NGNjZDY2N2RjOWIyNjZlMmM5N2E1YWYwMzdmNDY3MGI2NjhmMDYwOTVhZjBmNTk3ZTcwM2ViYjM5IiwiaWF0IjoxNjcxODAzMTM5LCJuYmYiOjE2NzE4MDMxMzksImV4cCI6MTY3MTgwNjczOSwic3ViIjoiIiwic2NvcGVzIjpbXX0.PHUacVZeNBpFecsMeiFmrXNww7260ivUjZazW9oej83eZlsQWp-vSSU_dUfh4yi3pzxHsYl3oA5JD7EaO2mNwAoP-ebXzLvPoFgYEm9pxtPRCu5mY_6pACzg_pq3F-cqr5UN6E0ex2xAQG_wUJb0GzdfcYq659ZbvLvd8p85VJmfyUtRv1zfjMCQyW1Lxauw1a_-ptqrvj17ISY0vrh7pQYa3ae8-a6h0kxPAyKQ0qaUES7ghw2T7c_ndF1p1FPNVXwT4CDiEm2sXWOe5Pp8MjHS7TRq7FBDXVPZgI1pbw2DbT10r4QPa6wl8htn-hfLnzAf44X4bavEcH8WIkZp2Q"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.petfinder.com/v2/animals"
+			},
+			"response": []
+		},
+		{
+			"name": "Add new pet details to",
+			"_postman_id": "6af5b92d-262b-4b7d-a06c-73ceee4ef38f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJPYjFuejduZG9yQUVablQ4NEFaNUlENTFBM2h1WGhyQnZrd0k3ejMzQzZhdXhzZ21WMCIsImp0aSI6IjExZjU2YjAwNjQzYzdhNTkwYTU2YTQ4NGNjZDY2N2RjOWIyNjZlMmM5N2E1YWYwMzdmNDY3MGI2NjhmMDYwOTVhZjBmNTk3ZTcwM2ViYjM5IiwiaWF0IjoxNjcxODAzMTM5LCJuYmYiOjE2NzE4MDMxMzksImV4cCI6MTY3MTgwNjczOSwic3ViIjoiIiwic2NvcGVzIjpbXX0.PHUacVZeNBpFecsMeiFmrXNww7260ivUjZazW9oej83eZlsQWp-vSSU_dUfh4yi3pzxHsYl3oA5JD7EaO2mNwAoP-ebXzLvPoFgYEm9pxtPRCu5mY_6pACzg_pq3F-cqr5UN6E0ex2xAQG_wUJb0GzdfcYq659ZbvLvd8p85VJmfyUtRv1zfjMCQyW1Lxauw1a_-ptqrvj17ISY0vrh7pQYa3ae8-a6h0kxPAyKQ0qaUES7ghw2T7c_ndF1p1FPNVXwT4CDiEm2sXWOe5Pp8MjHS7TRq7FBDXVPZgI1pbw2DbT10r4QPa6wl8htn-hfLnzAf44X4bavEcH8WIkZp2Q"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"animals\": [{\r\n\t\t\"organization_id\": \"SF212\",\r\n\t\t\"url\": \"https://www.petfinder.com/cat/nebula-124/nj/jersey-city/nj333-petfinder-test-account/?referrer_id=d7e3700b-2e07-11e9-b3f3-0800275f82b1\",\r\n\t\t\"type\": \"Dog\",\r\n\t\t\"species\": \"Dog\",\r\n\t\t\"breeds\": {\r\n\t\t\t\"primary\": \"Mexican Shorthair\",\r\n\t\t\t\"secondary\": \"Dolphin\",\r\n\t\t\t\"mixed\": false,\r\n\t\t\t\"unknown\": false\r\n\t\t},\r\n\t\t\"colors\": {\r\n\t\t\t\"primary\": \"Tortoiseshell\",\r\n\t\t\t\"secondary\": null,\r\n\t\t\t\"tertiary\": null\r\n\t\t},\r\n\t\t\"age\": \"Medium\",\r\n\t\t\"gender\": \"Female\",\r\n\t\t\"size\": \"Medium\",\r\n\t\t\"coat\": \"Short\",\r\n\t\t\"name\": \"Dracula\",\r\n\t\t\"description\": \"Dracula is a shorthaired, shy Dog. She is very affectionate once she warms up to you.\",\r\n\t\t\"photos\": [{\r\n\t\t\t\"small\": \"https://photos.petfinder.com/photos/pets/124/1/?bust=1546042081&width=100\",\r\n\t\t\t\"medium\": \"https://photos.petfinder.com/photos/pets/124/1/?bust=1546042081&width=300\",\r\n\t\t\t\"large\": \"https://photos.petfinder.com/photos/pets/124/1/?bust=1546042081&width=600\",\r\n\t\t\t\"full\": \"https://photos.petfinder.com/photos/pets/124/1/?bust=1546042081\"\r\n\t\t}],\r\n\t\t\"videos\": [{\r\n\t\t\t\"embed\": \"<iframe src=\\\"https://www.youtube.com/embed/xaXbs1fRFRM\\\" frameborder=\\\"0\\\" allowfullscreen></iframe>\"\r\n\t\t}],\r\n\t\t\"status\": \"adoptable\",\r\n\t\t\"attributes\": {\r\n\t\t\t\"spayed_neutered\": true,\r\n\t\t\t\"house_trained\": true,\r\n\t\t\t\"declawed\": false,\r\n\t\t\t\"special_needs\": false,\r\n\t\t\t\"shots_current\": true\r\n\t\t},\r\n\t\t\"environment\": {\r\n\t\t\t\"children\": false,\r\n\t\t\t\"dogs\": true,\r\n\t\t\t\"cats\": true\r\n\t\t},\r\n\t\t\"tags\": [\r\n\t\t\t\"Cute\",\r\n\t\t\t\"Intelligent\",\r\n\t\t\t\"Playful\",\r\n\t\t\t\"Happy\",\r\n\t\t\t\"Affectionate\"\r\n\t\t],\r\n\t\t\"contact\": {\r\n\t\t\t\"email\": \"petfindertechsupport@gmail.com\",\r\n\t\t\t\"phone\": \"555-555-5555\",\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"address1\": null,\r\n\t\t\t\t\"address2\": null,\r\n\t\t\t\t\"city\": \"Jersey City\",\r\n\t\t\t\t\"state\": \"NJ\",\r\n\t\t\t\t\"postcode\": \"07097\",\r\n\t\t\t\t\"country\": \"US\"\r\n\t\t\t}\r\n\t\t},\r\n\t\t\"published_at\": \"2018-09-04T14:49:09+0000\",\r\n\t\t\"distance\": 0.4095,\r\n\t\t\"_links\": {\r\n\t\t\t\"self\": {\r\n\t\t\t\t\"href\": \"/v2/animals/124\"\r\n\t\t\t},\r\n\t\t\t\"type\": {\r\n\t\t\t\t\"href\": \"/v2/types/cat\"\r\n\t\t\t},\r\n\t\t\t\"organization\": {\r\n\t\t\t\t\"href\": \"/v2/organizations/nj333\"\r\n\t\t\t}\r\n\t\t}\r\n\t}]\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": "https://api.petfinder.com/v2/animals"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Animal Types",
+			"_postman_id": "7e7c7aef-432d-4eab-b272-539ceb2e3855",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Get A Single Animal Type",
+			"_postman_id": "26ee1678-ffcb-496a-a53f-888dd35f216d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Get Animal Breeds",
+			"_postman_id": "fa22f36d-a1b6-47b5-92dd-610cd9ab1d72",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Get Organization Name",
+			"_postman_id": "2620309b-ffe0-462d-92e0-4561459a1f84",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Return Details on Single Organization",
+			"_postman_id": "163ea525-e31a-43cc-a84b-6517529a99d6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
