@@ -1,1 +1,29 @@
 This repo is related to API Collections for PetFinder
+
+https://www.petfinder.com/developers/v2/docs/#api-calls
+
+URL: https://api.petfinder.com/v2/animals
+
+BaseURL: https://www.petfinder.com/
+EndPoint: v2/animals
+
+Total count: 268691 till now
+
+API Key: Ob1nz7ndorAEZnT84AZ5ID51A3huXhrBvkwI7z33C6auxsgmV0  (CLIENT-ID)
+
+Secret Key: Ne2xajCyrhf6UBW08SB2NZz342WhJS7S8WOPUs9y    (SECRET key)
+
+(Please generate token using below curl https://reqbin.com/curl(online generator))
+curl -d "grant_type=client_credentials&client_id=Ob1nz7ndorAEZnT84AZ5ID51A3huXhrBvkwI7z33C6auxsgmV0&client_secret=Ne2xajCyrhf6UBW08SB2NZz342WhJS7S8WOPUs9y" https://api.petfinder.com/v2/oauth2/token
+
+{
+    "token_type": "Bearer",
+    "expires_in": 3600,
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJPYjFuejduZG9yQUVablQ4NEFaNUlENTFBM2h1WGhyQnZrd0k3ejMzQzZhdXhzZ21WMCIsImp0aSI6IjExZjU2YjAwNjQzYzdhNTkwYTU2YTQ4NGNjZDY2N2RjOWIyNjZlMmM5N2E1YWYwMzdmNDY3MGI2NjhmMDYwOTVhZjBmNTk3ZTcwM2ViYjM5IiwiaWF0IjoxNjcxODAzMTM5LCJuYmYiOjE2NzE4MDMxMzksImV4cCI6MTY3MTgwNjczOSwic3ViIjoiIiwic2NvcGVzIjpbXX0.PHUacVZeNBpFecsMeiFmrXNww7260ivUjZazW9oej83eZlsQWp-vSSU_dUfh4yi3pzxHsYl3oA5JD7EaO2mNwAoP-ebXzLvPoFgYEm9pxtPRCu5mY_6pACzg_pq3F-cqr5UN6E0ex2xAQG_wUJb0GzdfcYq659ZbvLvd8p85VJmfyUtRv1zfjMCQyW1Lxauw1a_-ptqrvj17ISY0vrh7pQYa3ae8-a6h0kxPAyKQ0qaUES7ghw2T7c_ndF1p1FPNVXwT4CDiEm2sXWOe5Pp8MjHS7TRq7FBDXVPZgI1pbw2DbT10r4QPa6wl8htn-hfLnzAf44X4bavEcH8WIkZp2Q"
+}
+
+{
+    "token_type": "Bearer",
+    "expires_in": 3600,
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJPYjFuejduZG9yQUVablQ4NEFaNUlENTFBM2h1WGhyQnZrd0k3ejMzQzZhdXhzZ21WMCIsImp0aSI6ImMzYmU0MmI5OTk3OWQ5N2YwYzM3MzczNGM4OGExNjNhMGU3OWFkZjUwNTYyYjE3ZTg1YTUzYzhlOWFlNjk2Y2U4M2U1ODlhNjdlZmQwZTIxIiwiaWF0IjoxNjcxODA4NTQzLCJuYmYiOjE2NzE4MDg1NDMsImV4cCI6MTY3MTgxMjE0Mywic3ViIjoiIiwic2NvcGVzIjpbXX0.y6XEd0iA6id4Yt_fmUgg4qCxIPMNDSacXJspwHGemNQ4NBm40LFsW4OL0SHPA4m69rRLo93gk-_X_J8JxfiAKgxXgZuhoAnfQQ2GLNgrmfdwZsnu1CEN7AZTtLZCs1fGhMm_8pEhxO-9MLPKzoFdNl6Hn_4yTZwt6OgiVhorxaQufwdaiWhd7od5ztFcGEQzRA2-SW9HLKGX5V8c_-0JAVUIhsLLrUrSH_8Sm5kHhDaX93eYGGtPj7u_ckNjn6jhvdfb-OtTYgdBuBEvKD5xB_opWihkA1e_jvqiff_gStPRRqaTqvUFU8dD9W2rSXVKQ4CHI6Z7P7AJwf4Dzdj0Lg"
+}
